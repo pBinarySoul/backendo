@@ -1,8 +1,7 @@
 <nav>
-    <div class="logo">HEHE</div>
+    <div class="logo"><a href="/">HEHE</a></div>
     <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/login">Login</a></li>
-        <li><a href="/register">Register</a></li>
+        <%- typeof user === "undefined" ? `<li><a href="/login">Login</a></li><li><a href="/register">Register</a></li>` : `<li><form action="/logout" method="POST"><input type="submit" value="Log out"></form></li>` %>
+        
     </ul>
 </nav>

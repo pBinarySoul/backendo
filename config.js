@@ -1,4 +1,5 @@
 module.exports = {
     PORT: 5000,
-    mongoURI: "NAH-UH",
+    SECRET: "NAH-UH",
+    MONGO_URI: "NAH-UH",
 };

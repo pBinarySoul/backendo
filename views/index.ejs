@@ -1,1 +1,3 @@
-<div class="welcome"><h1>WELCOME</h1></div>
+<div class="welcome">
+	<%-typeof user !== "undefined" ? `<h1>WELCOME ${user.email}</h1>` : "<h1>Please log in</h1>"%>
+</div>
